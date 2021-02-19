@@ -1,17 +1,43 @@
-#myName h1 {
-    text-align:center;
-    font-size:5rem;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+header {
+    background-color: darkgrey;
+}
+
+#myName {
+    /* text-align:center;
+    font-size:7rem; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    display:flex;
+    justify-content: center;
+
+}
+
+#myName img {
+    border-radius: 45%;
+    opacity: .6;
+    /* box-shadow: 12px 29px 81px 0px rgba(0,0.4,0,0.75); */
 }
 
 .navBar {
     display:flex;
     width:100%;
     justify-content: center;
+    background-color: black;
 }
 /* this is for the buttons at the top of the website */
 .topButtons{
     background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    text-decoration:none;
     color: white;
+    border: 0px;
     transition: .3s;
     width:150px;
     height:50px;
@@ -33,6 +59,11 @@
 }
 
 #big-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap:wrap;
     height:500px;
     overflow:hidden;
 }
@@ -49,10 +80,22 @@
 }
 
 .elements {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 16%;
     height: 95%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    transition:.4s;
+    border-radius: 5px;
+}
 
+.elements:hover {
+    opacity:.6;
+}
+
+.elements img {
+    width:auto;
 }
 
 .elements-text {
@@ -77,10 +120,17 @@ footer {
 
 footer .contactMe {
     background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    text-decoration:none;
     color: white;
+    border: 0px;
     transition: .3s;
     width:150px;
     height:50px;
+    border-radius: 10px;
 }
 
 .contactMe:hover {
