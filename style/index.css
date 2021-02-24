@@ -168,7 +168,7 @@ header {
 .elements-text {
     display:flex;
     text-align:left;
-    font-size:24px;
+    font-size:1.3rem;
     align-items:center;
     width: 16%;
     height: 95%;
@@ -210,27 +210,13 @@ footer .contactMe {
 /* reactive CSS below 2/24/21 */
 
 @media (max-width: 800px) {
+    #myName {
+        max-width:800px;
+        width:100%;
+    }
 
-}
-
-@media (max-width: 500px) {
-    
-   #myName {
-       max-width:500px;
-       width:100%;
-   }
-   
     #myName img {
         border-radius:0%;
-    }
-    
-    .navBar {
-        flex-flow:column;
-        align-items:center;
-    }
-    .topButtons {
-        font-size: 2rem;
-        width:100%;
     }
 
     #introducing {
@@ -249,13 +235,31 @@ footer .contactMe {
         width:40%;
         height: 300px;
         padding: 10px;
-        border-radius: 15px;
+        border-radius: 25px;
     }
     .elements-text {
         width:40%;
         height: 300px;
         padding: 10px;
         order: -1;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+   #myName {
+       max-width:500px;
+       width:100%;
+   }
+    
+    .navBar {
+        flex-flow:column;
+        align-items:center;
+    }
+    .topButtons {
+        font-size: 2rem;
+        width:100%;
     }
 
 }
