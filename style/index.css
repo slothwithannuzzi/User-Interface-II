@@ -65,6 +65,7 @@ header {
     /* font-family: 'Shadows Into Light', cursive; */
     display:flex;
     justify-content: center;
+    overflow:hidden;
 
 }
 
@@ -130,7 +131,7 @@ header {
     align-content: center;
     align-items: flex-start;
     flex-wrap:wrap;
-    height:500px;
+    height:10%;
     overflow:hidden;
 }
 #big-img img {
@@ -204,4 +205,57 @@ footer .contactMe {
 .contactMe:hover {
     background-color: white;
     color: black;
+}
+
+/* reactive CSS below 2/24/21 */
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+    
+   #myName {
+       max-width:500px;
+       width:100%;
+   }
+   
+    #myName img {
+        border-radius:0%;
+    }
+    
+    .navBar {
+        flex-flow:column;
+        align-items:center;
+    }
+    .topButtons {
+        font-size: 2rem;
+        width:100%;
+    }
+
+    #introducing {
+        /* max-width: 500px; */
+        padding-top: 30px;
+        align-items: center;
+        margin: 0 5% 0 5%;
+    }
+
+    .bigContainer {
+        flex-wrap: wrap;
+        height: 30%;
+    }
+
+    .elements{
+        width:40%;
+        height: 300px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .elements-text {
+        width:40%;
+        height: 300px;
+        padding: 10px;
+        order: -1;
+    }
+
 }
